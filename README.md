@@ -45,4 +45,4 @@ The portfolio was designed with **user experience** and **visual appeal** in min
 🔗 [Behance](https://www.behance.net) | [LinkedIn](https://www.linkedin.com) | [Facebook](https://www.facebook.com) | [Twitter](https://www.twitter.com)
 
 ## 📜 Copyright
-© 2022 UI Portfolio. All Rights Reserved.
+© 2025 UI Portfolio. All Rights Reserved.
