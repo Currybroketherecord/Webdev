@@ -52,6 +52,7 @@ nav ul li a:hover {
 /* Main Content */
 main {
     text-align: center;
+    font-size: large;
     padding: 50px;
 }
 
@@ -69,3 +70,4 @@ main {
 .btn:hover {
     transform: scale(1.1);
 }
+
