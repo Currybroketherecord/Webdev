@@ -56,6 +56,14 @@ main {
     padding: 50px;
 }
 
+.logo{
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -258,4 +266,29 @@ footer {
     margin-top: 15px;
     font-size: 12px;
     opacity: 0.7;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+body.dark-mode a {
+    color: #00bfa5; /* Adjust link color for dark mode */
+}
+
+body.dark-mode .btn {
+    background-color: #333333; /* Darker button background */
+    color: #ffffff; /* Light button text */
+}
+
+body.dark-mode .footer-container {
+    background-color: #1e1e1e; /* Dark footer background */
+    color: #ffffff; /* Light footer text */
+}
+
+/* Smooth transition for dark mode */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }

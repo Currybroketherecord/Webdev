@@ -27,6 +27,28 @@ document.addEventListener("DOMContentLoaded", function() {
             button.style.transform = "scale(1)";
         });
     });
+    const darkModeToggle = document.querySelector(".dark-mode-toggle");
+
+    // Check if dark mode is already enabled in localStorage
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        darkModeToggle.textContent = "☀️ Light Mode"; // Update button text
+    }
+
+    // Add event listener for the toggle button
+    darkModeToggle.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        document.body.classList.toggle("dark-mode");
+
+        // Update button text and save preference in localStorage
+        if (document.body.classList.contains("dark-mode")) {
+            darkModeToggle.textContent = "☀️ Light Mode";
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            darkModeToggle.textContent = "🌙 Dark Mode";
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
 });
 function toggleServices() {
     const hiddenServices = document.querySelectorAll('.service.hidden');
