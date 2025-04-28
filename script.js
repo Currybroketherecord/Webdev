@@ -28,3 +28,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function toggleServices() {
+    const hiddenServices = document.querySelectorAll('.service.hidden');
+    const viewMoreButton = document.querySelector('.view-more-btn');
+    const viewLessButton = document.querySelector('.view-less-btn');
+
+    if (viewMoreButton.style.display !== 'none') {
+        // Show all hidden services
+        hiddenServices.forEach(service => {
+            service.classList.remove('hidden');
+        });
+        viewMoreButton.style.display = 'none'; // Hide "View More" button
+        viewLessButton.style.display = 'inline-block'; // Show "View Less" button
+    } else {
+        // Hide extra services
+        const allServices = document.querySelectorAll('.service');
+        allServices.forEach((service, index) => {
+            if (index >= 3) {
+                service.classList.add('hidden'); // Hide services after the first 3
+            }
+        });
+        viewMoreButton.style.display = 'inline-block'; // Show "View More" button
+        viewLessButton.style.display = 'none'; // Hide "View Less" button
+    }
+}

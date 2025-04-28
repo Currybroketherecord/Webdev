@@ -21,25 +21,43 @@
         </nav>
     </header>
     <main>
-        <p>Here are the services I offer.</p>
+        <h1>Here are the services I offer.</h1>
         <div class="services">
             <div class="service">
+                <h2>Web Hosting</h2>
+                <p>Reliable and secure web hosting services to keep your website running smoothly.</p>
+            </div>
+            <div class="service">
+                <h2>Social Media Management</h2>
+                <p>Effective social media strategies to grow your online presence and engage your audience.</p>
+            </div>
+            <div class="service">
+                <h2>Photography</h2>
+                <p>Professional photography services for events, products, and personal projects.</p>
+            </div>
+            <div class="service hidden">
+                <h2>Video Editing</h2>
+                <p>High-quality video editing services to create engaging and polished video content.</p>
+            </div>
+            <div class="service hidden">
                 <h2>Coding</h2>
                 <p>I provide high-quality coding services, including web development, app development, and more.</p>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <h2>Graphic Design</h2>
                 <p>Creative graphic design solutions for logos, branding, and marketing materials.</p>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <h2>SEO Optimization</h2>
                 <p>Improve your website's visibility with professional SEO strategies and techniques.</p>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <h2>Content Writing</h2>
                 <p>Engaging and high-quality content writing services for blogs, websites, and marketing campaigns.</p>
             </div>
         </div>
+        <button class="view-more-btn" onclick="toggleServices()">View More</button>
+        <button class="view-less-btn hidden" onclick="toggleServices()" style="display: none;">View Less</button>
         <a href="home.html" class="btn">Back to Home</a> <!-- Link to go back -->
     </main>
     <script src="script.js"></script>

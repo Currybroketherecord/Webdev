@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color:white;
     color: white;
     animation: fadeIn 1s ease-in-out;
 }
@@ -71,3 +71,129 @@ main {
     transform: scale(1.1);
 }
 
+/* Main Content Layout */
+.main-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: large;
+    padding: 50px;
+    gap: 20px;
+}
+
+.skills-image {
+    width: 50%; /* Image takes half the width */
+    max-width: 100%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.text-content {
+    width: 50%; /* Text takes the other half */
+    text-align: right;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-item {
+    width: 80%;
+    text-align: left;
+}
+
+.skill-item span {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #00bfa5;
+    width: 0; /* Default width */
+    transition: width 0.5s ease-in-out;
+}
+
+.skill-bar-fill[data-skill="90"] {
+    width: 90%;
+}
+
+.skill-bar-fill[data-skill="60"] {
+    width: 80%;
+}
+
+.skill-bar-fill[data-skill="70"] {
+    width: 70%;
+}
+
+.skill-bar-fill[data-skill="80"] {
+    width: 60%;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    justify-content: center;}
+
+.service {
+    background-color:skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    width: 200px; /* Adjust the width of the box */
+    height: auto; /* Allow the height to adjust based on content */
+    flex: 0 0 auto; /* Prevent boxes from stretching */
+
+}
+
+.service.hidden{
+    display: none; /* Hide the service when not in view */
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* View More Button */
+.view-more-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00bfa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #008f7a;
+}
